@@ -1,6 +1,6 @@
 # JadurBox AI Agents — Cross-platform Starter Kit
 
-Five portable specialized **instruction agents** for JadurBox video productions, with a source-of-truth in `core/`. **Nothing in this repo automatically posts to GitHub, YouTube or edits media.** You must supply local authorized tools to run media commands.
+Seven portable specialized **instruction agents** for JadurBox video productions, with a source-of-truth in `core/`. **Nothing in this repo automatically posts to GitHub, YouTube or edits media.** You must supply local authorized tools to run media commands.
 
 ## Hierarchy
 
@@ -10,6 +10,8 @@ JadurBox-Agent (Director)
 │   └── JD-Script-QA (Independent Script Review)
 └── JD-Video-agent (HyperFrames Editor)
     └── JD-Video-QA (Independent Video Review)
+└── JD-Asset-agent (Asset Sourcing)
+    └── JD-Asset-QA (Independent Asset Review)
 ```
 
 ## Install/use
@@ -38,3 +40,10 @@ No API keys, `.env` files, paid footage, voiceovers, music, video exports, custo
 
 ## Push policy
 **DO NOT PUSH until the creator explicitly approves and specifies destination repository and visibility.** Review the complete diff first. If authorized, use an available connected GitHub tool / CLI. A newly connected GitHub account is not blanket permission to push.
+
+## Asset department
+
+- `jd-asset-agent` and `jd-asset-qa` are additional canonical roles in `core/` with adapters for Claude, Gemini, Codex.
+- Optional local `tools/asset_cli.py` can search Pixabay photos/videos and Unsplash photos; Pollinations generation requires creator authorization.
+- Copy `.env.example` to `.env` **locally**, add newly rotated credentials, and never commit `.env`.
+- QA should check direct source links, licensing, AI/archival labels and actual media dimensions before asset use.

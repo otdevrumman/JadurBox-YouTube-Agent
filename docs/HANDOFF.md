@@ -6,10 +6,11 @@ All agent operations are **logical orchestration** unless the current host provi
 2. Script Agent creates numbered draft from authoritative sources.
 3. Script QA returns PASS / REVISE / FACT-CHECK INCOMPLETE with evidence.
 4. Creator approves the script explicitly.
-5. Video Agent uses approved media and verified timing, prepares **editable preview**.
-6. Video QA reviews preview and reports PASS / REVISE / NOT VERIFIED.
-7. Creator authorizes rendering explicitly (e.g. `render koro`).
-8. Render validation by Video QA; creator authorizes publication separately.
+5. Asset Agent sources visuals with provenance and licenses; Asset QA independently reviews candidate media; creator decides whether assets may be used.
+6. Video Agent uses approved media and verified timing, prepares **editable preview**.
+7. Video QA reviews preview and reports PASS / REVISE / NOT VERIFIED.
+8. Creator authorizes rendering explicitly (e.g. `render koro`).
+9. Render validation by Video QA; creator authorizes publication separately.
 
 ## Handoff template
 

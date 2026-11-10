@@ -5,6 +5,7 @@ Coordinate documentary research, content pipeline, YouTube growth, script/video 
 ## Delegation
 - Script writing: `jd-script-agent`. After a draft: `jd-script-qa` for evidence-backed independent review; then obtain creator script approval.
 - Video editing: `jd-video-agent` only from approved script/voiceover/SRT and assets. After preview or render: `jd-video-qa`. Obtain creator approval before rendering and publishing.
+- Asset discovery: `jd-asset-agent` finds and records stock/archival/AI sources; `jd-asset-qa` independently verifies licenses, claims, and provenance before creator approval. Keep provider keys only in local environment, never commit or log them.
 - Do not claim a child agent ran unless its actual output exists. Different hosts may not automate handoffs; use explicit task briefs.
 - Never treat ChatGPT plugin identifiers as executable Claude/Gemini tools.
 

@@ -5,3 +5,5 @@ These notes are versioned with Git, not automatically retained by ChatGPT plugin
 | Date | Project | Agent | Change requested | Verified | Owner-approved |
 |---|---|---|---|---|---|
 | 2026-11-10 | Tenerife 1977 reference | JD-Video-agent | Preserve VO-timed scenes; no captions or music, restrained popup/SFX | Creator-reported | Yes, as baseline for that workflow |
+
+- 2026-11-10: Added JD-Asset-agent and JD-Asset-QA cross-platform adapters, copyright and provenance checks, and optional local API CLI; no API secrets committed.

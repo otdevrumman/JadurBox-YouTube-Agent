@@ -7,13 +7,15 @@ No third-party dependencies. Never writes outside the current repository.
 from pathlib import Path
 import sys
 ROOT=Path(__file__).resolve().parents[1]
-NAMES=['jadurbox-main','jd-script-agent','jd-script-qa','jd-video-agent','jd-video-qa']
+NAMES=['jadurbox-main','jd-script-agent','jd-script-qa','jd-video-agent','jd-video-qa','jd-asset-agent','jd-asset-qa']
 DESCS={
  'jadurbox-main':'Direct the JadurBox production and growth team with human approval gates.',
  'jd-script-agent':'Write and revise verified Bangladeshi Bengali documentary scripts using the JadurBox 13-step structure.',
  'jd-script-qa':'Independently fact-check and review JadurBox Bengali documentary scripts before creator approval.',
  'jd-video-agent':'Edit JadurBox HyperFrames documentary projects with voiceover-SRT timing, popups, SFX, and preview before render.',
- 'jd-video-qa':'Independently inspect JadurBox video preview and render quality, framing, voice-SRT timing, SFX and popups.'
+ 'jd-video-qa':'Independently inspect JadurBox video preview and render quality, framing, voice-SRT timing, SFX and popups.',
+ 'jd-asset-agent':'Source JadurBox documentary photo/video/archival assets with exact provenance and optional secure local search APIs.',
+ 'jd-asset-qa':'Independently review JadurBox asset source links, licenses, media integrity, archival authenticity and AI disclosures.'
 }
 
 def safe_yaml(v): return "'"+v.replace("'","''")+"'"
@@ -45,5 +47,5 @@ def main():
     target.write_text(content,encoding='utf-8')
  if stale and check:
   print('OUT OF SYNC: '+', '.join(stale));return 1
- print(('Verified' if check else 'Generated')+' 15 agent adapters.');return 0
+ print(('Verified' if check else 'Generated')+f' {len(NAMES)*3} agent adapters.');return 0
 if __name__=='__main__':raise SystemExit(main())
