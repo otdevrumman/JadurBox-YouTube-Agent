@@ -1,0 +1,22 @@
+# Never commit secrets, tokens, paid assets, renders or local caches
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*credential*.json
+node_modules/
+.venv/
+__pycache__/
+.pytest_cache/
+*.mp4
+*.mov
+*.mp3
+*.wav
+*.srt
+renders/
+previews/
+secrets/
+private/
+.DS_Store
