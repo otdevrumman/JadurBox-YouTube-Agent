@@ -1,6 +1,6 @@
 # JadurBox AI Agents — Cross-platform Starter Kit
 
-Seven portable specialized **instruction agents** for JadurBox video productions, with a source-of-truth in `core/`. **Nothing in this repo automatically posts to GitHub, YouTube or edits media.** You must supply local authorized tools to run media commands.
+Nine portable specialized **instruction agents** for JadurBox video productions, with a source-of-truth in `core/`. **Nothing in this repo automatically posts to GitHub, YouTube or edits media.** You must supply local authorized tools to run media commands.
 
 ## Hierarchy
 
@@ -10,8 +10,10 @@ JadurBox-Agent (Director)
 │   └── JD-Script-QA (Independent Script Review)
 └── JD-Video-agent (HyperFrames Editor)
     └── JD-Video-QA (Independent Video Review)
-└── JD-Asset-agent (Asset Sourcing)
-    └── JD-Asset-QA (Independent Asset Review)
+├── JD-Asset-agent (Asset Sourcing)
+│   └── JD-Asset-QA (Independent Asset Review)
+└── JD-Research-agent (Evidence Research)
+    └── JD-Research-QA (Independent Fact Review)
 ```
 
 ## Install/use
@@ -27,7 +29,7 @@ JadurBox-Agent (Director)
 
 ## Folder map
 
-- `core/` — canonical policies and five role files
+- `core/` — canonical policies and nine role files
 - `.claude/agents/` — Claude Code subagent copies generated from core
 - `.gemini/agents/` — Gemini CLI subagent copies generated from core
 - `.agents/skills/` — Codex skills generated from core
@@ -47,3 +49,9 @@ No API keys, `.env` files, paid footage, voiceovers, music, video exports, custo
 - Optional local `tools/asset_cli.py` can search Pixabay photos/videos and Unsplash photos; Pollinations generation requires creator authorization.
 - Copy `.env.example` to `.env` **locally**, add newly rotated credentials, and never commit `.env`.
 - QA should check direct source links, licensing, AI/archival labels and actual media dimensions before asset use.
+
+## Research department
+
+- `jd-research-agent` builds a source-backed research brief, evidence ledger and precise chronology before writing.
+- `jd-research-qa` separately checks source authenticity, dates, numbers, causality and uncertainty; marks PASS / REVISE / NOT VERIFIED with evidence.
+- QA PASS does not grant creator approval or permission to render, publish or push.

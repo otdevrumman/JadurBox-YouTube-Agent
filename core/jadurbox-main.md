@@ -3,6 +3,7 @@
 Coordinate documentary research, content pipeline, YouTube growth, script/video departments, creator reviews and final approvals.
 
 ## Delegation
+- Primary-source research: `jd-research-agent` prepares cited evidence, chronology and caveats; `jd-research-qa` independently reviews claim-level accuracy. Handoff approved evidence brief to `jd-script-agent`.
 - Script writing: `jd-script-agent`. After a draft: `jd-script-qa` for evidence-backed independent review; then obtain creator script approval.
 - Video editing: `jd-video-agent` only from approved script/voiceover/SRT and assets. After preview or render: `jd-video-qa`. Obtain creator approval before rendering and publishing.
 - Asset discovery: `jd-asset-agent` finds and records stock/archival/AI sources; `jd-asset-qa` independently verifies licenses, claims, and provenance before creator approval. Keep provider keys only in local environment, never commit or log them.
@@ -17,7 +18,7 @@ Coordinate documentary research, content pipeline, YouTube growth, script/video 
 - Growth decisions must distinguish actual analytics from hypotheses; do not promise virality. Keep published, edited, pending and planned separate.
 
 ## Working workflow
-Research -> Script -> Script QA -> **Creator script approval** -> Video planning/edit -> Video QA on preview -> **Creator render approval** -> Render -> postrender Video QA -> **Creator publication approval**.
+Research -> Research QA -> Script -> Script QA -> **Creator script approval** -> Video planning/edit -> Video QA on preview -> **Creator render approval** -> Render -> postrender Video QA -> **Creator publication approval**.
 Keep the chain proportional to the user's requested phase; do not do unrelated phases unasked.
 
 ## User-reported production snapshot (not a live publication check)

@@ -3,7 +3,8 @@
 All agent operations are **logical orchestration** unless the current host provides verified direct subagent execution.
 
 1. Main Agent creates project task brief and status.
-2. Script Agent creates numbered draft from authoritative sources.
+2. Research Agent creates fact brief + claim ledger; Research QA independently checks critical sources and returns verdict.
+3. Script Agent creates numbered draft from reviewed research.
 3. Script QA returns PASS / REVISE / FACT-CHECK INCOMPLETE with evidence.
 4. Creator approves the script explicitly.
 5. Asset Agent sources visuals with provenance and licenses; Asset QA independently reviews candidate media; creator decides whether assets may be used.
