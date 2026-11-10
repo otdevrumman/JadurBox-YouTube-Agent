@@ -1,19 +1,21 @@
 # JadurBox AI Agents — Cross-platform Starter Kit
 
-Nine portable specialized **instruction agents** for JadurBox video productions, with a source-of-truth in `core/`. **Nothing in this repo automatically posts to GitHub, YouTube or edits media.** You must supply local authorized tools to run media commands.
+Eleven portable specialized **instruction agents** for JadurBox video productions, with a source-of-truth in `core/`. **Nothing in this repo automatically posts to GitHub, YouTube or edits media.** You must supply local authorized tools to run media commands.
 
 ## Hierarchy
 
 ```text
 JadurBox-Agent (Director)
+├── JD-Growth-agent (YouTube Growth)
+│   └── JD-Growth-QA (Independent Growth Review)
+├── JD-Research-agent (Evidence Research)
+│   └── JD-Research-QA (Independent Fact Review)
 ├── JD-Script-agent (Writer)
 │   └── JD-Script-QA (Independent Script Review)
-└── JD-Video-agent (HyperFrames Editor)
-    └── JD-Video-QA (Independent Video Review)
 ├── JD-Asset-agent (Asset Sourcing)
 │   └── JD-Asset-QA (Independent Asset Review)
-└── JD-Research-agent (Evidence Research)
-    └── JD-Research-QA (Independent Fact Review)
+└── JD-Video-agent (HyperFrames Editor)
+    └── JD-Video-QA (Independent Video Review)
 ```
 
 ## Install/use
@@ -29,7 +31,7 @@ JadurBox-Agent (Director)
 
 ## Folder map
 
-- `core/` — canonical policies and nine role files
+- `core/` — canonical policies and eleven role files
 - `.claude/agents/` — Claude Code subagent copies generated from core
 - `.gemini/agents/` — Gemini CLI subagent copies generated from core
 - `.agents/skills/` — Codex skills generated from core
@@ -55,3 +57,9 @@ No API keys, `.env` files, paid footage, voiceovers, music, video exports, custo
 - `jd-research-agent` builds a source-backed research brief, evidence ledger and precise chronology before writing.
 - `jd-research-qa` separately checks source authenticity, dates, numbers, causality and uncertainty; marks PASS / REVISE / NOT VERIFIED with evidence.
 - QA PASS does not grant creator approval or permission to render, publish or push.
+
+## Growth department
+
+- `jd-growth-agent` uses dated YouTube Studio/authorized vidIQ evidence for content and SEO plans, separating Shorts vs long-form.
+- `jd-growth-qa` independently verifies numbers, periods, sources, competitor estimates and title claims. Neither QA nor growth claims guarantee virality.
+- Private analytics and credentials are excluded from public GitHub. Private ChatGPT Plugins are not auto-synced.

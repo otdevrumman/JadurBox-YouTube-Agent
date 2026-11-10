@@ -7,7 +7,7 @@ No third-party dependencies. Never writes outside the current repository.
 from pathlib import Path
 import sys
 ROOT=Path(__file__).resolve().parents[1]
-NAMES=['jadurbox-main','jd-script-agent','jd-script-qa','jd-video-agent','jd-video-qa','jd-asset-agent','jd-asset-qa','jd-research-agent','jd-research-qa']
+NAMES=['jadurbox-main','jd-script-agent','jd-script-qa','jd-video-agent','jd-video-qa','jd-asset-agent','jd-asset-qa','jd-research-agent','jd-research-qa','jd-growth-agent','jd-growth-qa']
 DESCS={
  'jadurbox-main':'Direct the JadurBox production and growth team with human approval gates.',
  'jd-script-agent':'Write and revise verified Bangladeshi Bengali documentary scripts using the JadurBox 13-step structure.',
@@ -17,7 +17,9 @@ DESCS={
  'jd-asset-agent':'Source JadurBox documentary photo/video/archival assets with exact provenance and optional secure local search APIs.',
  'jd-asset-qa':'Independently review JadurBox asset source links, licenses, media integrity, archival authenticity and AI disclosures.',
  'jd-research-agent':'Research JadurBox documentary topics using primary sources, verified chronology, and evidence ledgers.',
- 'jd-research-qa':'Independently verify JadurBox research sources, casualty counts, historical facts and disputed claims.'
+ 'jd-research-qa':'Independently verify JadurBox research sources, casualty counts, historical facts and disputed claims.',
+ 'jd-growth-agent':'Analyze JadurBox channel analytics, content opportunities and SEO using dated verified sources.',
+ 'jd-growth-qa':'Independently check JadurBox growth metrics, comparisons, recommendations and SEO integrity.'
 }
 
 def safe_yaml(v): return "'"+v.replace("'","''")+"'"

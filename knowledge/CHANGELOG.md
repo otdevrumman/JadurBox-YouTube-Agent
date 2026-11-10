@@ -9,3 +9,5 @@ These notes are versioned with Git, not automatically retained by ChatGPT plugin
 - 2026-11-10: Added JD-Asset-agent and JD-Asset-QA cross-platform adapters, copyright and provenance checks, and optional local API CLI; no API secrets committed.
 
 - 2026-11-10: Added JD-Research-agent and JD-Research-QA cross-platform role adapters; source-ledger workflow and independent verification. No secrets.
+
+- 2026-11-10: Added JD-Growth-agent and JD-Growth-QA canonical rules plus Claude/Gemini/Codex adapters. No private analytics or credentials committed.

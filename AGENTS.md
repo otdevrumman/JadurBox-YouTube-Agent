@@ -2,7 +2,7 @@
 
 This repo holds **platform-portable instructions**, not a running autonomous agent service. Read `core/COMMON.md` and the relevant department in `core/` before work. `jadurbox-main` coordinates subagents and requires creator approval at script, preview, render and publication gates.
 
-Agents: `jadurbox-main`, `jd-script-agent`, `jd-script-qa`, `jd-video-agent`, `jd-video-qa`.
+Agents: `jadurbox-main`, `jd-growth-agent`, `jd-growth-qa`, `jd-research-agent`, `jd-research-qa`, `jd-script-agent`, `jd-script-qa`, `jd-asset-agent`, `jd-asset-qa`, `jd-video-agent`, `jd-video-qa`.
 
 **Important:** no GitHub `push`, publication, rendering, destructive operations, or plugin installation without explicit approval. Treat QA PASS as recommendation, not creator approval. Each task must report what was not verified.
 
